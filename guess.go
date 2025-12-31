@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-func main() {
+func main4() {
 	r := rand.New(rand.NewSource(time.Now().UnixNano())) // Create a local random generator
 	target := r.Intn(100) + 1
 	fmt.Println("I've chosen a random number between 1 and 100")
