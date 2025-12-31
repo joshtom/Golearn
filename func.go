@@ -16,7 +16,7 @@ func paintNeeded(width float64, height float64) (float64, error) {
 	return area / 10.0, nil
 }
 
-func main() {
+func main3() {
 	// var amount, total float64
 	amount, err := paintNeeded(4.2, -3.0)
 
