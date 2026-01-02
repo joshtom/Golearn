@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type BankAccount struct {
-	Owner string
+	Owner   string
 	Balance float64
 }
 
@@ -21,12 +21,12 @@ func withdraw(account *BankAccount, amount float64) {
 	}
 }
 
-func main() {
+func main1() {
 	myAccount := BankAccount{Owner: "John", Balance: 100.00}
 	fmt.Printf("Starting balance: $%.2f\n", myAccount.Balance)
 
-	deposit(&myAccount, 50.00) //Same account!
-	withdraw(&myAccount, 30.00) // Same account 
+	deposit(&myAccount, 50.00)  //Same account!
+	withdraw(&myAccount, 30.00) // Same account
 
 	fmt.Printf("Final balance: $%.2f\n", myAccount.Balance)
 }
