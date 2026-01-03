@@ -27,7 +27,7 @@ func getFloat() (float64, error) {
 	return number, nil
 }
 
-func main() {
+func tocelcius() {
 	fmt.Print("Enter a temperature in Fahrenheit: ")
 	fahrenheit, err := getFloat()
 
