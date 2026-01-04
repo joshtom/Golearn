@@ -10,7 +10,7 @@ func modifySlice(slice []int) {
 	slice[0] = 100 // Modifies the original
 }
 
-func main() {
+func arraySlices() {
 	// Array
 	arr := [3]int{1, 2, 3}
 	modifyArray(arr)
