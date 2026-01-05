@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func mapFunc() {
 	students := map[string]int{
 		"Alice": 90,
 		"Bob":   85,
