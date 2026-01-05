@@ -4,6 +4,7 @@ import "fmt"
 
 func modifyArray(arr [3]int) {
 	arr[0] = 100 // Modifies the copy
+	fmt.Println((arr))
 }
 
 func modifySlice(slice []int) {
