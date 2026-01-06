@@ -45,7 +45,7 @@ func (a Account) DisplayInfo() {
 		a.AccountNumber, a.Owner, a.AccountType, a.Balance)
 }
 
-func main() {
+func structFunc() {
 	account := Account{
 		AccountNumber: "123456789",
 		Owner:         "John Doe",
