@@ -34,7 +34,7 @@ func (p Price) String() string {
 	return fmt.Sprintf("%s %.2f", p.Currency, float64(p.Amount)/100)
 }
 
-func main() {
+func definedTypes() {
 	coffee := Price{Amount: 450, Currency: USD} // $4.50
 	muffin := Price{Amount: 325, Currency: USD} // $3.25
 	total, err := coffee.Add(muffin)
