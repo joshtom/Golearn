@@ -72,7 +72,7 @@ func (s *SavingsAccount) ApplyInterest() {
 	s.Deposit(interest)
 }
 
-func main() {
+func encapsulation_embedding() {
 	// Encapsulation example
 	account := NewBankAccount2("ACC001", "John Doe", 1000.0)
 	fmt.Printf("Initial balance: $%.2f\n", account.GetBalance())
