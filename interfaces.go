@@ -65,11 +65,17 @@ func (s UserService) CreateUser(name, email string) error {
 	return s.repo.Save(user)
 }
 
+func (s UserService) DeleteUser(id int) error {
+	return s.repo.Delete(id)
+}
+
 func main() {
-	// Easy to switch between implementations
+	// Postgress service implementation
 	postgresService := UserService{repo: PostgresRepo{}}
 	postgresService.CreateUser("Alice", "alice@example.com")
 
+	// MongoDB service implementation
 	mongoService := UserService{repo: MongoRepo{}}
 	mongoService.CreateUser("Bob", "bob@example.com")
+	mongoService.DeleteUser(1)
 }
