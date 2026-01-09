@@ -69,7 +69,7 @@ func (s UserService) DeleteUser(id int) error {
 	return s.repo.Delete(id)
 }
 
-func main() {
+func interfaces() {
 	// Postgress service implementation
 	postgresService := UserService{repo: PostgresRepo{}}
 	postgresService.CreateUser("Alice", "alice@example.com")
