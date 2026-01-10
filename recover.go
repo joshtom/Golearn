@@ -27,7 +27,7 @@ func safeHandler(userID int) {
 	processRequest(userID)
 }
 
-func main() {
+func recoverMain() {
 	fmt.Println("Server Started")
 
 	userIDs := []int{42, 0, 15, -5, 100}
