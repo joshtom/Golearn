@@ -32,7 +32,7 @@ func fetchURL(url string, results chan<- Result, wg *sync.WaitGroup) {
 	}
 }
 
-func main() {
+func mainGoRoutine() {
 	urls := []string{
 		"https://api.github.com",
 		"https://api.twitter.com",
